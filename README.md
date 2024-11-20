@@ -8,7 +8,7 @@ Bash is a command-line interpreter widely used on Linux systems and is used as t
 Bash scripting is used to automate a variety of tasks on Linux systems.
 
 ## Bash Scripting 
-***
+
 * Bash scripts do not need to end with the extension `.sh` but it is good practice to do so.
 * Bash files need to include this statement at the top of the file
 `#!/bin/bash`
@@ -16,7 +16,7 @@ Bash scripting is used to automate a variety of tasks on Linux systems.
 * Check the secure Bash scripting techniques
 
 ### Bash Comments
-***
+
 * To add single comments to a Bash script, use the `#` character/symbol.
 * To add multi-line comments to a Bash script, use the following characters (and spacing).
 ```
