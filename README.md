@@ -1,9 +1,9 @@
 # Bash Project
-***
+
 This project contains essential information to assist in the development and maintenance of Bash scripts and utility scripts for system administration and security.
 
 ## Bash Basics
-***
+
 Bash is a command-line interpreter widely used on Linux systems and is used as the default login shell.
 Bash scripting is used to automate a variety of tasks on Linux systems.
 
