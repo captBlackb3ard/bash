@@ -31,8 +31,7 @@ Bash scripting is used to automate a variety of tasks on Linux systems.
 
 ### Exit Bash Script Execution
 * It is possible to execute the execution of a Bash script using the following commands:
- - The 'exit' command allows exiting a script at any point of execution & optionally returns a status.
-  - The exit status is an integer with '0' (zero), while a non-zero status indicates an error.
+ - The 'exit' command allows exiting a script at any point of execution & optionally returns a status. The exit status is an integer with '0' (zero), while a non-zero status indicates an error.
  - The 'return' command is generally used to terminate a function & return a value to the caller.
  - The 'kill' command sends the 'TERM' signal to a process (the script) to forcefully stop the process. The script will need its process ID to terminate itself (use PID=$! to get the process ID, then execute with the statement: kill -9 $PID)
   
