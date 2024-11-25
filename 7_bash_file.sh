@@ -94,7 +94,7 @@ if [ ! -f data_file ]; then
     echo "File 'data_file' does not exist in the current directory! " >&2
     exit 1
 else #File exists, append data to file
-    #echo -n "Tokyo Berlin Quebec Madrid" >> data_file 
+    echo -n "Tokyo Berlin Quebec Madrid" >> data_file 
     echo "Data Written"
 fi
 
