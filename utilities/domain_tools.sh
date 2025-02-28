@@ -34,12 +34,21 @@ dns_lookup() {
     echo "--------------------------------------"
 }
 
-# PTR (reverse DNS) lookup for IP
+# PTR (reverse DNS) and WHOISlookup for IP
 ptr_lookup() {
     local ip=$1
     echo "===== PTR Lookup for $ip using Nameserver $NAMESERVER ====="
     echo "PTR Record: $(dig @$NAMESERVER +short -x $ip)"
-    echo "--------------------------------------"
+    echo "--------------------------------------\n"
+    if [ ! -x "$(command -v whois)" ]; then
+        echo "[-] whois command required to perform WHOIS on IP"
+        exit 1
+    else
+        echo "===== WHOIS Lookup for $ip ====="
+        whois $ip | grep "Organization\|Country\|RegDate\|Updated\|NetRange"
+        echo "--------------------------------------\n"
+    fi
+    
 }
 
 # Read file with domains/IPs
